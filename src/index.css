@@ -2,8 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .center-y{
+    @apply flex items-center
+  }
+  .title{
+    @apply text-3xl bg-orange font-semibold mt-4 px-4 py-2
+  }
+}
+
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Poppins, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -17,4 +26,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.overflow-x-scroll::-webkit-scrollbar{
+  display: none;
 }
