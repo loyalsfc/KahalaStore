@@ -15,7 +15,7 @@ function ContextProvider({children}){
         fetch(`https://api.escuelajs.co/api/v1/products`)
         .then(result => result.json())
         .then(data => setProducts(data))
-    })   
+    },[])   
 
 
     return(
